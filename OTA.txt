@@ -1,0 +1,720 @@
+08:30:42.911545
+08:30:42.911545	[0xB0C0]	UL_DCCH / MeasurementReport
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 15.9.0
+Radio Bearer ID = 1, Physical Cell ID = 204
+Freq = 6400
+SysFrameNum = N/A, SubFrameNum = 0
+PDU Number = UL_DCCH Message,    Msg Length = 26
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value UL-DCCH-Message ::= 
+{
+  message c1 : measurementReport : 
+      {
+        criticalExtensions c1 : measurementReport-r8 : 
+            {
+              measResults 
+              {
+                measId 15,
+                measResultPCell 
+                {
+                  rsrpResult 57,
+                  rsrqResult 19
+                },
+                measResultNeighCells measResultListEUTRA : 
+                  {
+                    {
+                      physCellId 411,
+                      measResult 
+                      {
+                        rsrpResult 25,
+                        rsrqResult 13
+                      }
+                    },
+                    {
+                      physCellId 491,
+                      measResult 
+                      {
+                        rsrpResult 20,
+                        rsrqResult 3
+                      }
+                    },
+                    {
+                      physCellId 200,
+                      measResult 
+                      {
+                        rsrpResult 20,
+                        rsrqResult 2
+                      }
+                    },
+                    {
+                      physCellId 77,
+                      measResult 
+                      {
+                        rsrpResult 19,
+                        rsrqResult 2
+                      }
+                    }
+                  },
+                measResultServFreqList-r10 
+                {
+                  {
+                    servFreqId-r10 1,
+                    measResultSCell-r10 
+                    {
+                      rsrpResultSCell-r10 40,
+                      rsrqResultSCell-r10 15
+                    }
+                  }
+                }
+              }
+            }
+      }
+}
+
+08:30:42.921946
+08:30:42.921946	[0xB0C0]	DL_DCCH / RRCConnectionReconfiguration
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 15.9.0
+Radio Bearer ID = 1, Physical Cell ID = 204
+Freq = 6400
+SysFrameNum = N/A, SubFrameNum = 3
+PDU Number = DL_DCCH Message,    Msg Length = 13
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value DL-DCCH-Message ::= 
+{
+  message c1 : rrcConnectionReconfiguration : 
+      {
+        rrc-TransactionIdentifier 2,
+        criticalExtensions c1 : rrcConnectionReconfiguration-r8 : 
+            {
+              measConfig 
+              {
+                measObjectToRemoveList 
+                {
+                  5,
+                  8,
+                  4,
+                  3
+                },
+                reportConfigToRemoveList 
+                {
+                  5,
+                  12
+                },
+                measIdToRemoveList 
+                {
+                  5,
+                  12,
+                  13,
+                  14,
+                  15
+                },
+                measGapConfig release : NULL
+              }
+            }
+      }
+}
+
+08:30:42.924801
+08:30:42.924801	[0xB0C0]	UL_DCCH / RRCConnectionReconfigurationComplete
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 15.9.0
+Radio Bearer ID = 1, Physical Cell ID = 204
+Freq = 6400
+SysFrameNum = N/A, SubFrameNum = 0
+PDU Number = UL_DCCH Message,    Msg Length = 2
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value UL-DCCH-Message ::= 
+{
+  message c1 : rrcConnectionReconfigurationComplete : 
+      {
+        rrc-TransactionIdentifier 2,
+        criticalExtensions rrcConnectionReconfigurationComplete-r8 : 
+          {
+          }
+      }
+}
+
+08:30:42.942456
+08:30:42.942456	[0xB821]	RADIO_BEARER_CONFIG
+Pkt Version = 12
+RRC Release Number.Major.minor = 15.9.0
+Radio Bearer ID = 1, Physical Cell ID = N/A
+NR Cell Global Id = N/A
+Freq = N/A
+Sfn = N/A, SubFrameNum = N/A
+slot = 0
+PDU Number = RADIO_BEARER_CONFIG Message,    Msg Length = 3
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value RadioBearerConfig ::= 
+{
+  drb-ToAddModList 
+  {
+    {
+      drb-Identity 1,
+      reestablishPDCP true
+    }
+  }
+}
+
+08:30:42.944629
+08:30:42.944629	[0xB0C0]	DL_DCCH / RRCConnectionReconfiguration
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 15.9.0
+Radio Bearer ID = 1, Physical Cell ID = 204
+Freq = 6400
+SysFrameNum = N/A, SubFrameNum = 0
+PDU Number = DL_DCCH Message,    Msg Length = 128
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value DL-DCCH-Message ::= 
+{
+  message c1 : rrcConnectionReconfiguration : 
+      {
+        rrc-TransactionIdentifier 3,
+        criticalExtensions c1 : rrcConnectionReconfiguration-r8 : 
+            {
+              mobilityControlInfo 
+              {
+                targetPhysCellId 78,
+                carrierFreq 
+                {
+                  dl-CarrierFreq 1300,
+                  ul-CarrierFreq 19300
+                },
+                carrierBandwidth 
+                {
+                  dl-Bandwidth n100,
+                  ul-Bandwidth n100
+                },
+                additionalSpectrumEmission 1,
+                t304 ms1000,
+                newUE-Identity '00111100 10111011'B,
+                radioResourceConfigCommon 
+                {
+                  rach-ConfigCommon 
+                  {
+                    preambleInfo 
+                    {
+                      numberOfRA-Preambles n56,
+                      preamblesGroupAConfig 
+                      {
+                        sizeOfRA-PreamblesGroupA n28,
+                        messageSizeGroupA b56,
+                        messagePowerOffsetGroupB dB10
+                      }
+                    },
+                    powerRampingParameters 
+                    {
+                      powerRampingStep dB2,
+                      preambleInitialReceivedTargetPower dBm-104
+                    },
+                    ra-SupervisionInfo 
+                    {
+                      preambleTransMax n10,
+                      ra-ResponseWindowSize sf10,
+                      mac-ContentionResolutionTimer sf64
+                    },
+                    maxHARQ-Msg3Tx 5
+                  },
+                  prach-Config 
+                  {
+                    rootSequenceIndex 334,
+                    prach-ConfigInfo 
+                    {
+                      prach-ConfigIndex 3,
+                      highSpeedFlag FALSE,
+                      zeroCorrelationZoneConfig 11,
+                      prach-FreqOffset 8
+                    }
+                  },
+                  pdsch-ConfigCommon 
+                  {
+                    referenceSignalPower 12,
+                    p-b 1
+                  },
+                  pusch-ConfigCommon 
+                  {
+                    pusch-ConfigBasic 
+                    {
+                      n-SB 4,
+                      hoppingMode interSubFrame,
+                      pusch-HoppingOffset 0,
+                      enable64QAM TRUE
+                    },
+                    ul-ReferenceSignalsPUSCH 
+                    {
+                      groupHoppingEnabled FALSE,
+                      groupAssignmentPUSCH 0,
+                      sequenceHoppingEnabled FALSE,
+                      cyclicShift 0
+                    }
+                  },
+                  pucch-ConfigCommon 
+                  {
+                    deltaPUCCH-Shift ds1,
+                    nRB-CQI 5,
+                    nCS-AN 0,
+                    n1PUCCH-AN 18
+                  },
+                  antennaInfoCommon 
+                  {
+                    antennaPortsCount an4
+                  },
+                  ul-CyclicPrefixLength len1,
+                  pusch-ConfigCommon-v1270 
+                  {
+                    enable64QAM-v1270 true
+                  }
+                },
+                rach-ConfigDedicated 
+                {
+                  ra-PreambleIndex 63,
+                  ra-PRACH-MaskIndex 0
+                }
+              },
+              radioResourceConfigDedicated 
+              {
+                mac-MainConfig explicitValue : 
+                  {
+                    ul-SCH-Config 
+                    {
+                      maxHARQ-Tx n5,
+                      periodicBSR-Timer sf10,
+                      retxBSR-Timer sf320,
+                      ttiBundling FALSE
+                    },
+                    drx-Config release : NULL,
+                    timeAlignmentTimerDedicated sf1920,
+                    phr-Config setup : 
+                      {
+                        periodicPHR-Timer sf100,
+                        prohibitPHR-Timer sf10,
+                        dl-PathlossChange dB3
+                      },
+                    mac-MainConfig-v1020 
+                    {
+                      extendedBSR-Sizes-r10 setup,
+                      extendedPHR-r10 setup
+                    }
+                  },
+                physicalConfigDedicated 
+                {
+                  pucch-ConfigDedicated 
+                  {
+                    ackNackRepetition release : NULL
+                  },
+                  soundingRS-UL-ConfigDedicated release : NULL,
+                  antennaInfo explicitValue : 
+                    {
+                      transmissionMode tm4,
+                      codebookSubsetRestriction n4TxAntenna-tm4 : '11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111'B,
+                      ue-TransmitAntennaSelection release : NULL
+                    },
+                  schedulingRequestConfig setup : 
+                    {
+                      sr-PUCCH-ResourceIndex 0,
+                      sr-ConfigIndex 15,
+                      dsr-TransMax n64
+                    },
+                  cqi-ReportConfig-r10 
+                  {
+                    cqi-ReportAperiodic-r10 setup : 
+                      {
+                        cqi-ReportModeAperiodic-r10 rm31,
+                        aperiodicCSI-Trigger-r10 
+                        {
+                          trigger1-r10 '10110000'B,
+                          trigger2-r10 '00110000'B
+                        }
+                      },
+                    nomPDSCH-RS-EPRE-Offset 0,
+                    cqi-ReportPeriodic-r10 release : NULL
+                  },
+                  csi-RS-Config-r10 
+                  {
+                    csi-RS-r10 release : NULL
+                  },
+                  pucch-ConfigDedicated-v1020 
+                  {
+                    pucch-Format-r10 format3-r10 : 
+                      {
+                        n3PUCCH-AN-List-r13 
+                        {
+                          10,
+                          11,
+                          12,
+                          13
+                        }
+                      }
+                  }
+                }
+              },
+              securityConfigHO 
+              {
+                handoverType intraLTE : 
+                  {
+                    keyChangeIndicator FALSE,
+                    nextHopChainingCount 0
+                  }
+              },
+              nonCriticalExtension 
+              {
+                lateNonCriticalExtension 
+                  CONTAINING
+                  {
+                    nonCriticalExtension 
+                    {
+                      antennaInfoDedicatedPCell-v10i0 
+                      {
+                        maxLayersMIMO-r10 fourLayers
+                      }
+                    }
+                  },
+                nonCriticalExtension 
+                {
+                  nonCriticalExtension 
+                  {
+                    sCellToReleaseList-r10 
+                    {
+                      1
+                    },
+                    sCellToAddModList-r10 
+                    {
+                      {
+                        sCellIndex-r10 2,
+                        cellIdentification-r10 
+                        {
+                          physCellId-r10 23,
+                          dl-CarrierFreq-r10 1444
+                        },
+                        radioResourceConfigCommonSCell-r10 
+                        {
+                          nonUL-Configuration-r10 
+                          {
+                            dl-Bandwidth-r10 n50,
+                            antennaInfoCommon-r10 
+                            {
+                              antennaPortsCount an4
+                            },
+                            phich-Config-r10 
+                            {
+                              phich-Duration normal,
+                              phich-Resource one
+                            },
+                            pdsch-ConfigCommon-r10 
+                            {
+                              referenceSignalPower 13,
+                              p-b 1
+                            }
+                          },
+                          ul-Configuration-r10 
+                          {
+                            ul-FreqInfo-r10 
+                            {
+                              additionalSpectrumEmissionSCell-r10 31
+                            },
+                            uplinkPowerControlCommonSCell-r10 
+                            {
+                              p0-NominalPUSCH-r10 -67,
+                              alpha-r10 al07
+                            },
+                            soundingRS-UL-ConfigCommon-r10 release : NULL,
+                            ul-CyclicPrefixLength-r10 len1,
+                            pusch-ConfigCommon-r10 
+                            {
+                              pusch-ConfigBasic 
+                              {
+                                n-SB 4,
+                                hoppingMode interSubFrame,
+                                pusch-HoppingOffset 0,
+                                enable64QAM TRUE
+                              },
+                              ul-ReferenceSignalsPUSCH 
+                              {
+                                groupHoppingEnabled FALSE,
+                                groupAssignmentPUSCH 0,
+                                sequenceHoppingEnabled FALSE,
+                                cyclicShift 0
+                              }
+                            }
+                          },
+                          pusch-ConfigCommon-v1270 
+                          {
+                            enable64QAM-v1270 true
+                          }
+                        },
+                        radioResourceConfigDedicatedSCell-r10 
+                        {
+                          physicalConfigDedicatedSCell-r10 
+                          {
+                            nonUL-Configuration-r10 
+                            {
+                              antennaInfo-r10 
+                              {
+                                transmissionMode-r10 tm4,
+                                codebookSubsetRestriction-r10 '11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111'B,
+                                ue-TransmitAntennaSelection release : NULL
+                              },
+                              pdsch-ConfigDedicated-r10 
+                              {
+                                p-a dB-3
+                              }
+                            },
+                            ul-Configuration-r10 
+                            {
+                              uplinkPowerControlDedicatedSCell-r10 
+                              {
+                                p0-UE-PUSCH-r10 0,
+                                deltaMCS-Enabled-r10 en0,
+                                accumulationEnabled-r10 TRUE,
+                                pSRS-Offset-r10 5,
+                                filterCoefficient-r10 fc6,
+                                pathlossReferenceLinking-r10 pCell
+                              },
+                              cqi-ReportConfigSCell-r10 
+                              {
+                                cqi-ReportModeAperiodic-r10 rm31,
+                                nomPDSCH-RS-EPRE-Offset-r10 0,
+                                cqi-ReportPeriodicSCell-r10 release : NULL
+                              },
+                              soundingRS-UL-ConfigDedicated-r10 release : NULL
+                            }
+                          }
+                        },
+                        antennaInfoDedicatedSCell-v10i0 
+                        {
+                          maxLayersMIMO-r10 fourLayers
+                        }
+                      },
+                      {
+                        sCellIndex-r10 3,
+                        cellIdentification-r10 
+                        {
+                          physCellId-r10 294,
+                          dl-CarrierFreq-r10 3749
+                        },
+                        radioResourceConfigCommonSCell-r10 
+                        {
+                          nonUL-Configuration-r10 
+                          {
+                            dl-Bandwidth-r10 n50,
+                            antennaInfoCommon-r10 
+                            {
+                              antennaPortsCount an2
+                            },
+                            phich-Config-r10 
+                            {
+                              phich-Duration normal,
+                              phich-Resource one
+                            },
+                            pdsch-ConfigCommon-r10 
+                            {
+                              referenceSignalPower 15,
+                              p-b 1
+                            }
+                          }
+                        },
+                        radioResourceConfigDedicatedSCell-r10 
+                        {
+                          physicalConfigDedicatedSCell-r10 
+                          {
+                            nonUL-Configuration-r10 
+                            {
+                              antennaInfo-r10 
+                              {
+                                transmissionMode-r10 tm4,
+                                codebookSubsetRestriction-r10 '111111'B,
+                                ue-TransmitAntennaSelection release : NULL
+                              },
+                              pdsch-ConfigDedicated-r10 
+                              {
+                                p-a dB-3
+                              }
+                            },
+                            ul-Configuration-r10 
+                            {
+                              cqi-ReportConfigSCell-r10 
+                              {
+                                cqi-ReportModeAperiodic-r10 rm31,
+                                nomPDSCH-RS-EPRE-Offset-r10 0,
+                                cqi-ReportPeriodicSCell-r10 release : NULL
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    nonCriticalExtension 
+                    {
+                      nonCriticalExtension 
+                      {
+                        nonCriticalExtension 
+                        {
+                          nonCriticalExtension 
+                          {
+                            nonCriticalExtension 
+                            {
+                              nr-RadioBearerConfig1-r15 '100400'H
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+      }
+}
+
+=======================================================
+Further decoding Nr radio Bearer Config 
+=======================================================
+
+
+Interpreted PDU:
+
+value RadioBearerConfig ::= 
+{
+  drb-ToAddModList 
+  {
+    {
+      drb-Identity 1,
+      reestablishPDCP true
+    }
+  }
+}
+
+08:30:42.967618
+08:30:42.967618	[0xB0C0]	UL_DCCH / RRCConnectionReconfigurationComplete
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 15.9.0
+Radio Bearer ID = 1, Physical Cell ID = 78
+Freq = 1300
+SysFrameNum = N/A, SubFrameNum = 0
+PDU Number = UL_DCCH Message,    Msg Length = 2
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value UL-DCCH-Message ::= 
+{
+  message c1 : rrcConnectionReconfigurationComplete : 
+      {
+        rrc-TransactionIdentifier 3,
+        criticalExtensions rrcConnectionReconfigurationComplete-r8 : 
+          {
+          }
+      }
+}
+
+08:30:42.996637
+08:30:42.996637	[0xB0C0]	DL_DCCH / RRCConnectionReconfiguration
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 15.9.0
+Radio Bearer ID = 1, Physical Cell ID = 78
+Freq = 1300
+SysFrameNum = N/A, SubFrameNum = 8
+PDU Number = DL_DCCH Message,    Msg Length = 21
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value DL-DCCH-Message ::= 
+{
+  message c1 : rrcConnectionReconfiguration : 
+      {
+        rrc-TransactionIdentifier 0,
+        criticalExtensions c1 : rrcConnectionReconfiguration-r8 : 
+            {
+              radioResourceConfigDedicated 
+              {
+                mac-MainConfig explicitValue : 
+                  {
+                    drx-Config setup : 
+                      {
+                        onDurationTimer psf2,
+                        drx-InactivityTimer psf200,
+                        drx-RetransmissionTimer psf16,
+                        longDRX-CycleStartOffset sf320 : 2
+                      },
+                    timeAlignmentTimerDedicated sf1920
+                  },
+                physicalConfigDedicated 
+                {
+                  cqi-ReportConfig-r10 
+                  {
+                    cqi-ReportAperiodic-r10 setup : 
+                      {
+                        cqi-ReportModeAperiodic-r10 rm31,
+                        aperiodicCSI-Trigger-r10 
+                        {
+                          trigger1-r10 '10110000'B,
+                          trigger2-r10 '00110000'B
+                        }
+                      },
+                    nomPDSCH-RS-EPRE-Offset 0,
+                    cqi-ReportPeriodic-r10 setup : 
+                      {
+                        cqi-PUCCH-ResourceIndex-r10 40,
+                        cqi-pmi-ConfigIndex 4,
+                        cqi-FormatIndicatorPeriodic-r10 widebandCQI-r10 : 
+                          {
+                          },
+                        ri-ConfigIndex 644,
+                        simultaneousAckNackAndCQI FALSE,
+                        csi-ConfigIndex-r10 release : NULL
+                      }
+                  }
+                }
+              }
+            }
+      }
+}
+
+08:30:43.003151
+08:30:43.003151	[0xB0C0]	UL_DCCH / RRCConnectionReconfigurationComplete
+Pkt Version = 27
+RRC Release Number.Major.minor = 16.1.0
+NR RRC Release Number.Major.minor = 15.9.0
+Radio Bearer ID = 1, Physical Cell ID = 78
+Freq = 1300
+SysFrameNum = N/A, SubFrameNum = 0
+PDU Number = UL_DCCH Message,    Msg Length = 2
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value UL-DCCH-Message ::= 
+{
+  message c1 : rrcConnectionReconfigurationComplete : 
+      {
+        rrc-TransactionIdentifier 0,
+        criticalExtensions rrcConnectionReconfigurationComplete-r8 : 
+          {
+          }
+      }
+}
+
